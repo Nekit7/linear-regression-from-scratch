@@ -76,7 +76,7 @@ learning_rate_1 = 0.01
 learning_rate_2 = 0.08
 batch_size = 64
 
-"""Yes, I did 2 lerning raita. Why? Read Robbins-Monroe's terms and conditions. 
+"""Yes, I did 2 learning rate. Why? Read Robbins-Monroe's terms and conditions. 
 For normal convergence I should have set a rather large learning rate 
 (Because the value of (learning_rate_2 / (i+1)) is constantly decreasing), 
 but at the first steps the weights were flying to infinity. 
