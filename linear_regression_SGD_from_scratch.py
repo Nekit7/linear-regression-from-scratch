@@ -134,9 +134,7 @@ for i in range(1, n_iterations + 1):
 #predict the price
 y_predict = []
 for i, value in enumerate(X_test[:]):
-    # Прогнозирование значений
-    predicted_value = (value[0]*w[0] + value[1]*w[1] + value[2]*w[2] + value[3]*w[3] + value[4]*w[4] + value[5]*w[5] + value[6]*w[6] + b)
-    # Добавляем разницу между прогнозом и реальным значением
+    predicted_value = (value.dot(w) + b)
     y_predict.append(predicted_value)
 
 y_predict = np.array(y_predict)
